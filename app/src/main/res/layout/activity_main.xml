@@ -22,7 +22,7 @@
                 android:gravity="center_horizontal"
                 android:checked="true"
                 android:id="@+id/home_id"
-                android:text="求救"
+                android:text="病例"
                 android:button="@null"
                 android:drawableTop="@drawable/home_selector"
                 android:textColor="@color/color_selector"
@@ -32,7 +32,7 @@
             <RadioButton
                 android:gravity="center_horizontal"
                 android:id="@+id/gallery_id"
-                android:text="解决"
+                android:text="初步诊断"
                 android:button="@null"
                 android:drawableTop="@drawable/gallery_selector"
                 android:textColor="@color/color_selector"
@@ -42,7 +42,7 @@
             <RadioButton
                 android:gravity="center_horizontal"
                 android:id="@+id/strategy_id"
-                android:text="装修攻略"
+                android:text="高级诊断"
                 android:button="@null"
                 android:drawableTop="@drawable/strategy_selector"
                 android:textColor="@color/color_selector"
@@ -52,7 +52,7 @@
             <RadioButton
                 android:gravity="center_horizontal"
                 android:id="@+id/design_id"
-                android:text="设计师"
+                android:text="留言"
                 android:button="@null"
                 android:drawableTop="@drawable/design_selector"
                 android:textColor="@color/color_selector"

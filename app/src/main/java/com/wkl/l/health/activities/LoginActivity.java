@@ -106,7 +106,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
      * TODO: remove after connecting to a real authentication system.
      */
     private static final String[] DUMMY_CREDENTIALS = new String[]{
-            "wamhkaili:hello", "liushuxin:world"
+            "wangkaili:hello", "liushuxin:world"
     };
     /**
      * Keep track of the login task to ensure we can cancel it if requested.
@@ -875,34 +875,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
     public void LoginXinLang(View view){ login(SHARE_MEDIA.SINA);}
     public void LoginWenXin(View view){login(SHARE_MEDIA.WEIXIN);}
     public void LoginQQ(View view){login(SHARE_MEDIA.QQ);}
-   /* @Override
-    public void onClick(View v) {
-        switch (v.getId()) {
-            case R.id.btn_sina_login: // 新浪微博登录
-                login(SHARE_MEDIA.SINA);
-                break;
-            case R.id.btn_qq_login: // qq登录
-                login(SHARE_MEDIA.QQ);
-                break;
-            case R.id.btn_wechat_login: // 微信登陆
-                login(SHARE_MEDIA.WEIXIN);
-                break;
-            case R.id.btn_share: // 一键分享
-                addCustomPlatforms();
-                break;
-            case R.id.btn_sina_logout: // 注销新浪账号
-                logout(SHARE_MEDIA.SINA);
-                break;
-            case R.id.btn_qq_logout: // 注销qq账号
-                logout(SHARE_MEDIA.QQ);
-                break;
-            case R.id.btn_wechat_logout:
-                logout(SHARE_MEDIA.WEIXIN); // 注销微信账号
-                break;
-            default:
-                break;
-        }
-    }*/
+
 
     /**
      * 授权。如果授权成功，则获取用户信息
@@ -973,6 +946,8 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
                         // }
 
                         if (info != null) {
+                            Intent intentqq=new Intent(LoginActivity.this,ThemeActivity.class);
+                            startActivity(intentqq);
                             Toast.makeText(LoginActivity.this, info.toString(),
                                     Toast.LENGTH_SHORT).show();
                         }
