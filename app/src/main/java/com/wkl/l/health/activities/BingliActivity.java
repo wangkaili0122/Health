@@ -9,10 +9,10 @@ import android.support.v7.app.AppCompatActivity;
  * Created by L on 2016/11/19.
  */
 
-public class BingliActivity extends AppCompatActivity {
+public class BingliActivity extends  AppCompatActivity{
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.fragment_bingli);
+        setContentView(R.layout.fragmentbingli);
     }
 }

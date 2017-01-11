@@ -480,7 +480,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
         UMVideo video = new UMVideo(
                 "http://v.youku.com/v_show/id_XNTc0ODM4OTM2.html");
         // vedio.setThumb("http://www.umeng.com/images/pic/home/social/img-1.png");
-        video.setTitle("友盟社会化组件视频");
+        video.setTitle("第三方登录视频");
         video.setThumb(urlImage);
 
         UMusic uMusic = new UMusic(
@@ -492,7 +492,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
 
         WeiXinShareContent weixinContent = new WeiXinShareContent();
         weixinContent.setShareContent("来自友盟社会化组件（SDK）让移动应用快速整合社交分享功能，微信");
-        weixinContent.setTitle("友盟社会化分享组件-微信");
+        weixinContent.setTitle("第三方登录微信");
         weixinContent.setTargetUrl("http://www.umeng.com");
         weixinContent.setShareMedia(urlImage);
         mController.setShareMedia(weixinContent);
@@ -500,7 +500,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
         // 设置朋友圈分享的内容
         CircleShareContent circleMedia = new CircleShareContent();
         circleMedia.setShareContent("来自友盟社会化组件（SDK）让移动应用快速整合社交分享功能，朋友圈");
-        circleMedia.setTitle("友盟社会化分享组件-朋友圈");
+        circleMedia.setTitle("第三方登录");
         circleMedia.setShareImage(urlImage);
         // circleMedia.setShareMedia(uMusic);
         // circleMedia.setShareMedia(video);
@@ -547,7 +547,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
         UMVideo umVideo = new UMVideo(
                 "http://v.youku.com/v_show/id_XNTc0ODM4OTM2.html");
         umVideo.setThumb("http://www.umeng.com/images/pic/home/social/img-1.png");
-        umVideo.setTitle("友盟社会化组件视频");
+        umVideo.setTitle("第三方登录视频");
 
         TencentWbShareContent tencent = new TencentWbShareContent();
         tencent.setShareContent("来自友盟社会化组件（SDK）让移动应用快速整合社交分享功能，腾讯微博");
@@ -588,8 +588,8 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
         // lwShareContent.setShareImage(urlImage);
         // lwShareContent.setShareMedia(uMusic);
         lwShareContent.setShareMedia(umVideo);
-        lwShareContent.setTitle("友盟社会化分享组件-来往");
-        lwShareContent.setMessageFrom("友盟分享组件");
+        lwShareContent.setTitle("第三方登录");
+        lwShareContent.setMessageFrom("第三方登录");
         lwShareContent.setShareContent("来自友盟社会化组件（SDK）让移动应用快速整合社交分享功能，来往");
         mController.setShareMedia(lwShareContent);
 
@@ -598,8 +598,8 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
         // lwDynamicShareContent.setShareImage(urlImage);
         // lwDynamicShareContent.setShareMedia(uMusic);
         lwDynamicShareContent.setShareMedia(umVideo);
-        lwDynamicShareContent.setTitle("友盟社会化分享组件-来往动态");
-        lwDynamicShareContent.setMessageFrom("来自友盟");
+        lwDynamicShareContent.setTitle("第三方登录");
+        lwDynamicShareContent.setMessageFrom("第三方登录");
         lwDynamicShareContent.setShareContent("来往动态分享测试");
         lwDynamicShareContent.setTargetUrl("http://www.umeng.com");
         mController.setShareMedia(lwDynamicShareContent);
@@ -701,7 +701,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
         YNoteShareContent yNoteShareContent = new YNoteShareContent();
         yNoteShareContent
                 .setShareContent("来自友盟社会化组件（SDK）让移动应用快速整合社交分享功能，云有道笔记");
-        yNoteShareContent.setTitle("友盟分享组件");
+        yNoteShareContent.setTitle("第三方登录");
         yNoteShareContent.setShareImage(new UMImage(LoginActivity.this,
                 new File("/storage/sdcard0/test12.png")));
         mController.setShareMedia(yNoteShareContent);
@@ -936,14 +936,6 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
 
                     @Override
                     public void onComplete(int status, Map<String, Object> info) {
-                        // String showText = "";
-                        // if (status == StatusCode.ST_CODE_SUCCESSED) {
-                        // showText = "用户名：" +
-                        // info.get("screen_name").toString();
-                        // Log.d("#########", "##########" + info.toString());
-                        // } else {
-                        // showText = "获取用户信息失败";
-                        // }
 
                         if (info != null) {
                             Intent intentqq=new Intent(LoginActivity.this,ThemeActivity.class);

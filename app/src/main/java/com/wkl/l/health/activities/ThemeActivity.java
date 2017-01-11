@@ -25,7 +25,6 @@ import java.util.List;
  */
 
 public class ThemeActivity extends AppCompatActivity {
-    private ImageView info;
     private RadioGroup group;
     private List<Fragment> fragments = new ArrayList<>();
     @Override
@@ -33,11 +32,9 @@ public class ThemeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         initView();
-        aboutinfo();
         linked();
     }
     private void initView(){
-        info=(ImageView) findViewById(R.id.image_login_id);
          group=(RadioGroup) findViewById(R.id.group_id);
        Fragment fragment1= new BingliFragment();
         Fragment fragment2= new DownFragment();
@@ -60,14 +57,5 @@ public class ThemeActivity extends AppCompatActivity {
                 }
             }
         });
-    }
-    private void aboutinfo(){
-       info.setOnClickListener(new View.OnClickListener(){
-           @Override
-           public void onClick(View view) {
-              Intent intent =new Intent(ThemeActivity.this,InfoActivity.class);
-               startActivity(intent);
-           }
-       });
     }
 }

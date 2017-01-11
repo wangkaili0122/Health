@@ -1,22 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
-
-
     <string name="prompt_password">密码</string>
     <string name="prompt_email">姓名</string>
     <string name="action_sign_in">登录</string>
     <string name="action_sign_in_short">Sign in</string>
     <string name="error_invalid_email">This email address is invalid</string>
-    <string name="error_invalid_password">This password is too short</string>
-    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_invalid_password">输入密码错误，请重新输入</string>
+    <string name="error_incorrect_password">输入密码错误</string>
     <string name="error_field_required">This field is required</string>
     <string name="permission_rationale">"Contacts permissions are needed for providing email
         completions."
     </string>
 
 
-    <string name="app_name">辅助医疗</string>
+    <string name="app_name">云医疗</string>
     <string name="action_settings">设置</string>
     <string name="actionbar_activity_not_found">Failed to open intent...</string>
     <string name="share_by_weixin">微信分享</string>
@@ -66,5 +63,18 @@
     <string name="ok">OK</string>
     <string name="cancelled">Cancelled</string>
     <string name="permission_not_granted">Unable to perform selected action because permissions were not granted.</string>
-
+    <string-array name="spingarr1">
+        <item>重庆</item>
+        <item>上海</item>
+        <item>广州</item>
+        <item>深圳</item>
+    </string-array>
+    <string-array name="spingarr2">
+        <item>协和医院</item>
+        <item>中医医院</item>
+    </string-array>
+    <string-array name="spingarr3">
+        <item>王明</item>
+        <item>李晓</item>
+    </string-array>
 </resources>

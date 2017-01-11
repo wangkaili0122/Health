@@ -59,7 +59,7 @@ public class GuidActivity extends AppCompatActivity {
             //第二次登录
             setContentView(R.layout.activity_guideone);
             image = ((ImageView) findViewById(R.id.image_id));
-            image.setImageResource(R.drawable.guju_splash);
+            image.setImageResource(R.drawable.guidaa);
             // Message message=Message.obtain();
             handler.sendEmptyMessageDelayed(100,2000);
         }

@@ -46,8 +46,11 @@
         <activity android:name=".RegActivity"/>
         <activity android:name=".BingliActivity"></activity>
         <activity android:name=".InfoActivity"></activity>
-
-
+        <activity android:name=".BingliDetailsActivity"></activity>
+        <activity android:name=".SmartActivity"></activity>
+        <activity android:name=".UpActivity"></activity>
+        <activity android:name=".DownActivity"></activity>
+        <activity android:name=".LiuyanActivity"></activity>
         <!-- 友盟AppKey， 需要替换成你自己的 -->
         <meta-data
             android:name="UMENG_APPKEY"
